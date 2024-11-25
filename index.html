@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Bow En Renovatie</title>
 </head>
 
@@ -200,7 +202,57 @@
                 </div>
             </div>
         </section>
+        <section class="sect2" id="gallery">
+            <div class="container">
+                <div class="grid2">
+                    <div class="left">
+                        <img class="logo" src="./img/logo2.svg" alt="logo">
+                        <h2>Our <br> projects</h2>
+                        <ul class="colomn">
+                            <li>
+                                <img src="./img/check_dark.svg" alt="checkbox">
+                                <p>12 years of experience</p>
+                            </li>
+                            <li>
+                                <img src="./img/check_dark.svg" alt="checkbox">
+                                <p>many positive references</p>
+                            </li>
+                            <li>
+                                <img src="./img/check_dark.svg" alt="checkbox">
+                                <p>1-year written guarantee</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="swiper swiper__portf">
+                            <div class="swiper-wrapper swiper__wrapper_portf">
+                                <div class="swiper-slide portf__slide">
+                                    <img loading="lazy" src="./img/gallery/img1.png" alt="photo">
+                                </div>
+                                <div class="swiper-slide portf__slide">
+                                    <img loading="lazy" src="./img/gallery/img2.png" alt="photo">
+                                </div>
+                                <div class="swiper-slide portf__slide">
+                                    <img loading="lazy" src="./img/gallery/img3.png" alt="photo">
+                                </div>
+                                <div class="swiper-slide portf__slide">
+                                    <img loading="lazy" src="./img/gallery/img1.png" alt="photo">
+                                </div>
+                                <div class="swiper-slide portf__slide">
+                                    <img loading="lazy" src="./img/gallery/img2.png" alt="photo">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev portf__prev"></div>
+                            <div class="swiper-button-next portf__next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -46,6 +46,7 @@ header {
   top: 0px;
   left: 0px;
   backdrop-filter: blur(10px);
+  z-index: 100;
 }
 
 .header__container {
@@ -448,4 +449,83 @@ header {
 .serv__card_list .serv__card_item:nth-child(2) a::after {
   border-bottom: 4px solid #1947b4;
   border-right: 4px solid #1947b4;
+}
+
+.sect2 .grid2 {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 600px;
+}
+.sect2 .left {
+  background-color: var(--color_yellow);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.sect2 .left .logo {
+  max-width: 110px;
+  margin-bottom: 30px;
+}
+.sect2 .left h2 {
+  color: var(--color_dark);
+  font-size: 50px;
+  font-weight: 700;
+}
+.sect2 .colomn {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect2 .colomn li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sect2 .colomn img {
+  width: 24px;
+}
+.sect2 .colomn p {
+  color: var(--color_blue);
+  font-size: 20px;
+  font-weight: 500;
+  transition: var(--trans);
+  cursor: default;
+}
+.sect2 .colomn p:hover {
+  color: var(--color_yellow);
+}
+
+.swiper__portf {
+  height: 600px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.portf__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portf__prev {
+  color: #fff !important;
+  height: 22px !important;
+  width: 9px !important;
+  left: 15px !important;
+}
+.portf__prev::after {
+  font-size: 22px !important;
+}
+
+.portf__next {
+  color: #fff !important;
+  height: 22px !important;
+  width: 9px !important;
+  right: 15px !important;
+}
+.portf__next::after {
+  font-size: 22px !important;
 }/*# sourceMappingURL=style.css.map */

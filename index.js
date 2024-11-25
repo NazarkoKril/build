@@ -20,3 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// swiper_gal
+const swiper = new Swiper(".swiper__portf", {
+    loop: true,
+    navigation: {
+        nextEl: ".portf__next",
+        prevEl: ".portf__prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 0,
+    breakpoints: {
+    }
+});
