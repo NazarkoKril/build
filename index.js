@@ -22,14 +22,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // swiper_gal
-const swiper = new Swiper(".swiper__portf", {
-    loop: true,
-    navigation: {
-        nextEl: ".portf__next",
-        prevEl: ".portf__prev",
-    },
-    slidesPerView: 3,
-    spaceBetween: 0,
-    breakpoints: {
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 4,
+        autoScroll: {
+            speed: 1,
+        },
+        pagination: false,
+        arrows: false,
+        breakpoints: {
+            1450: {
+                perPage: 3,
+                autoScroll: {
+                    speed: 1,
+                },
+            },
+            780: {
+                perPage: 2,
+                autoScroll: {
+                    speed: 1,
+                },
+            },
+
+
+        },
+    }).mount(window.splide.Extensions);
+});
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide1', {
+        type: 'fade',
+        rewind: true,
+        arrows: false,
+        perPage: 1,
+        autoScroll: {
+            speed: 1,
+        },
+        breakpoints: {
+
+
+
+
+        },
+    }).mount(window.splide.Extensions);
 });

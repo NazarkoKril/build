@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- splide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
     <title>Bow En Renovatie</title>
 </head>
 
@@ -31,7 +31,7 @@
                     <nav class="h__center">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="./" class="header__link">Home</a>
+                                <a href="./#home" class="header__link">Home</a>
                             </li>
                             <li class="header__item">
                                 <a href="#gallery" class="header__link">Oue Projects</a>
@@ -40,13 +40,16 @@
                                 <a href="#serv" class="header__link">Services</a>
                             </li>
                             <li class="header__item">
+                                <a href="#how" class="header__link">How We Work</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#form" class="header__link">Contact</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#rev" class="header__link">Review</a>
+                            </li>
+                            <li class="header__item">
                                 <a href="#faq" class="header__link">FAQ</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#contact" class="header__link">Contact</a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#review" class="header__link">Review</a>
                             </li>
 
                         </ul>
@@ -116,7 +119,7 @@
             </div>
     </header>
     <main>
-        <section class="sect1">
+        <section class="sect1" id="home">
             <div class="container">
                 <div class="grid_main">
                     <div class="left">
@@ -203,55 +206,577 @@
             </div>
         </section>
         <section class="sect2" id="gallery">
-            <div class="container">
-                <div class="grid2">
-                    <div class="left">
-                        <img class="logo" src="./img/logo2.svg" alt="logo">
-                        <h2>Our <br> projects</h2>
-                        <ul class="colomn">
-                            <li>
-                                <img src="./img/check_dark.svg" alt="checkbox">
-                                <p>12 years of experience</p>
-                            </li>
-                            <li>
-                                <img src="./img/check_dark.svg" alt="checkbox">
-                                <p>many positive references</p>
-                            </li>
-                            <li>
-                                <img src="./img/check_dark.svg" alt="checkbox">
-                                <p>1-year written guarantee</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right">
-                        <div class="swiper swiper__portf">
-                            <div class="swiper-wrapper swiper__wrapper_portf">
-                                <div class="swiper-slide portf__slide">
+
+            <div class="grid2">
+                <div class="left">
+                    <img class="logo" src="./img/logo2.svg" alt="logo">
+                    <h2>Our <br> projects</h2>
+                    <ul class="colomn">
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>12 years of experience</p>
+                        </li>
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>many positive references</p>
+                        </li>
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>1-year written guarantee</p>
+                        </li>
+                    </ul>
+                    <a href="#form" class="order__btn"><span></span>Contact</a>
+                </div>
+                <div class="right">
+                    <div id="splide" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
                                     <img loading="lazy" src="./img/gallery/img1.png" alt="photo">
-                                </div>
-                                <div class="swiper-slide portf__slide">
+                                </li>
+                                <li class="splide__slide">
                                     <img loading="lazy" src="./img/gallery/img2.png" alt="photo">
-                                </div>
-                                <div class="swiper-slide portf__slide">
+                                </li>
+                                <li class="splide__slide">
                                     <img loading="lazy" src="./img/gallery/img3.png" alt="photo">
-                                </div>
-                                <div class="swiper-slide portf__slide">
-                                    <img loading="lazy" src="./img/gallery/img1.png" alt="photo">
-                                </div>
-                                <div class="swiper-slide portf__slide">
+                                </li>
+                                <li class="splide__slide">
                                     <img loading="lazy" src="./img/gallery/img2.png" alt="photo">
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev portf__prev"></div>
-                            <div class="swiper-button-next portf__next"></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
+        </section>
+        <section class=" sect3 " id="serv">
+            <div class="yellow" style="background-color: #ffda03;width: 100%;
+           height: 10px;">
+
+            </div>
+            <div class="grid2">
+
+                <ul class="service__list">
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Renovation</h4>
+                                <p>Our renovation services breathe new life into any space, whether it’s your home,
+                                    office, or apartment. We focus on
+                                    enhancing functionality, modernizing interiors, and improving the overall aesthetic
+                                    to match your vision and needs.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Home extension</h4>
+                                <p>Whether you need extra space for a growing family or a home office, we specialize in
+                                    building home extensions that
+                                    seamlessly integrate with your existing property. Our team ensures that the design,
+                                    construction, and finish add both
+                                    practical value and aesthetic appeal.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Bathroom renovation</h4>
+                                <p>Revamp your bathroom with our expert renovation services. We’ll help you create a
+                                    spa-like atmosphere with modern
+                                    fixtures, innovative layouts, and stylish finishes, turning your bathroom into a
+                                    relaxing and functional space.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Painting and plastering</h4>
+                                <p>Our painting and plastering services offer a flawless finish to your walls and
+                                    ceilings. Whether you’re refreshing
+                                    existing surfaces or preparing for a full transformation, we ensure smooth, even
+                                    coverage that lasts.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Tiling</h4>
+                                <p>From bathrooms to kitchens, we provide high-quality tiling services for any room in
+                                    your home or office. We guarantee
+                                    precise, clean installations that enhance the look and functionality of your floors,
+                                    walls, and backsplashes.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Electrician</h4>
+                                <p>We provide a full range of services, from installing lighting and electrical systems
+                                    to troubleshooting and repairs. We
+                                    ensure all work is done safely, meeting all regulations, to keep your home or office
+                                    running smoothly.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Plumbing</h4>
+                                <p>From routine maintenance to emergency repairs, our professional plumbers handle all
+                                    your plumbing needs. Whether it’s
+                                    installing new fixtures or fixing leaks, we ensure that all work is completed
+                                    efficiently and to the highest standard.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a href="./service-card.html">
+                            <img src="./img/service/serv1.jpg" alt="photo" class="service__item_img">
+                            <div class="hero__card_info">
+
+                                <h4>Kitchen renovation</h4>
+                                <p>Transform your kitchen into a modern and functional space with our expert renovation
+                                    services. From custom cabinetry and
+                                    countertops to lighting and appliances, we focus on creating a stylish and practical
+                                    design tailored to your needs.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="left">
+                    <img class="logo" src="./img/logo2.svg" alt="logo">
+                    <h2>Services</h2>
+                    <ul class="colomn">
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>Trusted by top companies</p>
+                        </li>
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>Guaranteed quality work</p>
+                        </li>
+                        <li>
+                            <img src="./img/check_dark.svg" alt="checkbox">
+                            <p>Continuous support included</p>
+                        </li>
+                    </ul>
+                    <a href="#form" class="order__btn"><span></span>Contact</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="sect4" id="how">
+            <div class="container">
+                <h2>How We Work</h2>
+                <p>From initial contact to project completion, our streamlined process ensures transparency, precision,
+                    and client
+                    satisfaction. Here's how we turn your ideas into reality</p>
+                <ul class="grid3">
+                    <li>
+                        <h3>Contact Us</h3>
+                        <h5>We will discuss about your project and make appointment with with representatives of our
+                            team at your project</h5>
+                    </li>
+                    <li>
+                        <h3>Proposal & Quote</h3>
+                        <h5>We will carefully calculate all stages of the work, timelines, and budget, which includes
+                            both material costs and the
+                            work of our experts.
+                        </h5>
+                    </li>
+                    <li>
+                        <h3>Execution and completion of work</h3>
+                        <h5>Our team executes the project with precision, ensuring that every detail aligns with your
+                            expectations.
+                        </h5>
+                    </li>
+                </ul>
+                <a href="#form" class="order__btn"><span></span>Contact</a>
+            </div>
+        </section>
+        <section class="sect5" id="form">
+            <div class="container">
+                <div class="right">
+
+                    <img src="./img/logo_yellow.svg" alt="logo">
+                    <h2>Contact</h2>
+                    <h3>Our construction specialists will promptly get in touch with you:</h3>
+                    <form action="">
+                        <div class="input">
+                            <label>First name</label>
+                            <input type="text" placeholder="First name" required>
+                        </div>
+                        <div class="input">
+                            <label>Type of Service</label>
+                            <select required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="cosmetic">Cosmetic</option>
+                                <option value="general">General</option>
+                                <option value="house-expansion">House Expansion</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="00-000-0000" required>
+                        </div>
+
+                        <button class="order__btn"><span></span>Call me back</button>
+                    </form>
+                    <p>I consent to the processing of my personal data in accordance with the requirements of the
+                        Regulation of the European
+                        Parliament and Council (EU) of April 27, 2016, and the Law of May 10, 2018, regarding the
+                        protection of personal data
+                        (Journal of Laws of 2018, item 1000).</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect6" id="rev">
+            <div class="container">
+                <h2>What our clients say about us</h2>
+                <h4>Our clients' feedback is the best testament to the quality of our services. Here’s what they have to
+                    say about their
+                    experience working with us.</h4>
+                <div id="splide1" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <h3>Sophie Jansen</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"I recently hired this company to renovate my apartment, and I couldn't be happier
+                                    with
+                                    the results! The team was
+                                    professional, communicative, and truly committed to quality work. They completed
+                                    everything on time, and my apartment
+                                    looks brand new!"</p>
+                            </li>
+                            <li class="splide__slide">
+                                <h3>Mark de Vries</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"Outstanding experience from start to finish! They helped us with every detail of our
+                                    home renovation and kept us
+                                    informed at each step. The work was done perfectly, and the team was respectful of
+                                    our home. Highly recommended!"
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <h3>Emma van Leeuwen</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"We had an excellent experience with this company. They transformed our bathroom into
+                                    a beautiful, modern space. The
+                                    work was high-quality, and they stuck to the schedule and budget. I would gladly
+                                    work with them again!"
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <h3>Lucas Bakker</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"Professional, efficient, and talented! This team renovated our kitchen and living
+                                    room, and the result is fantastic.
+                                    They listened to our ideas and gave us exactly what we wanted. Thanks for a job well
+                                    done!"
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <h3>Anna Willems</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"Fantastic job on our home extension! The whole team was friendly and focused on
+                                    making sure everything was done right.
+                                    The extension blends seamlessly with our home, and we couldn't be happier with the
+                                    service."
+
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <h3>Tom Visser</h3>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        style="fill: #ffda03">
+                                        <path
+                                            d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p>"Our experience was excellent from start to finish. They renovated our entire house,
+                                    and the quality of work is
+                                    top-notch. The team was very detail-oriented, and they made the whole process smooth
+                                    and stress-free. Highly recommend!"
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sect7" id="faq">
+            <div class="container">
+                <h2>Frequently asked questions</h2>
+                <h4>Find answers to the most common questions we receive. If you can't find what you're looking for,
+                    feel free to reach out
+                    to us directly!</h4>
+                <ul class="grid2">
+                    <li>
+                        <h1>?</h1>
+                        <h3>What services do you offer?</h3>
+                        <p>We offer comprehensive construction services including planning, renovation, project
+                            management, and consultation.
+                        </p>
+                    </li>
+                    <li>
+                        <h1>?</h1>
+                        <h3>How long does a project typically take?</h3>
+                        <p>Project duration varies based on scope and complexity. We provide detailed timelines and
+                            ensure timely completion.
+
+                        </p>
+                    </li>
+                    <li>
+                        <h1>?</h1>
+                        <h3>What materials do you use?</h3>
+                        <p>We use high-quality, sustainable materials for all our projects, ensuring durability and
+                            eco-friendliness.
+
+                        </p>
+                    </li>
+                    <li>
+                        <h1>?</h1>
+                        <h3>Do you offer warranties?</h3>
+                        <p>Yes, we provide warranties on our workmanship and materials used.
+
+
+                        </p>
+                    </li>
+                    <li>
+                        <h1>?</h1>
+                        <h3>How can I get a quote?</h3>
+                        <p>Contact us via our website or call us for a free consultation and quote.
+
+                        </p>
+                    </li>
+                    <li>
+                        <h1>?</h1>
+                        <h3>How long does a project typically take?</h3>
+                        <p>Project duration varies based on scope and complexity. We provide detailed timelines and
+                            ensure timely
+                            completion.
+
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+
     <script src="./index.js"></script>
 </body>
 
