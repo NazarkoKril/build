@@ -383,6 +383,7 @@ header {
       input,
       select {
         padding: 8px 10px;
+        width: 100%;
         border-radius: 4px;
         border: 2px solid transparent;
         outline: none;
@@ -1201,4 +1202,7 @@ footer {
   .main p {
     font-size: 18px;
   }
+}
+.iti__country-list {
+  width: 300px !important;
 }
