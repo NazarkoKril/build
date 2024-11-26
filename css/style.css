@@ -828,6 +828,7 @@ header {
 .sect5 .right .input select {
   padding: 8px 10px;
   border-radius: 4px;
+  width: 100% !important;
   border: 2px solid transparent;
   outline: none;
   color: var(--color_dark);
