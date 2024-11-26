@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     }).mount(window.splide.Extensions);
 });
+
+// swiper rev 
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide1', {
         type: 'fade',

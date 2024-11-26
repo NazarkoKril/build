@@ -18,6 +18,9 @@
   margin: 0 auto;
   padding: 0 50px;
 }
+section {
+  scroll-margin-top: 94px;
+}
 @media (max-width: 1050px) {
   .container {
     padding: 0 15px;
