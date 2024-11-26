@@ -1066,6 +1066,51 @@ footer .grid2 p {
   font-size: 16px;
 }
 
+.grid_main .left h2 {
+  font-size: 40px !important;
+}
+
+.sect2 .left h2,
+.sect3 .left h2,
+.sect4 h2,
+.sect5 .right h2,
+.sect6 h2,
+.sect7 h2 {
+  font-size: 40px !important;
+}
+
+.grid_main .left h3 {
+  font-size: 18px;
+}
+
+.grid_main .right h3,
+.grid_main .right h3,
+.sect4 p,
+.sect6 h4,
+.sect7 .grid2 p {
+  font-size: 18px;
+}
+
+.order__btn,
+.grid_main .right .input label,
+.grid_main .right .input input,
+.grid_main .right .input select,
+.sect5 .right .input label,
+.sect5 .right .input input,
+.sect5 .right .input select {
+  font-size: 15px;
+}
+
+.hero__card_info p {
+  letter-spacing: 1.1px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.sect4 p {
+  font-size: 20px;
+}
+
 @media (max-width: 1400px) {
   .service__list {
     grid-template-columns: 1fr 1fr;
@@ -1170,10 +1215,6 @@ footer .grid2 p {
   }
   .grid_main .left h2 {
     font-size: 40px;
-  }
-  .grid_main .left h3,
-  .sect4 p {
-    font-size: 22px;
   }
   .sect2 .left h2,
   .sect3 .left h2,
