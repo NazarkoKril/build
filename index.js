@@ -40,13 +40,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     speed: 1,
                 },
             },
-            780: {
+            950: {
                 perPage: 2,
                 autoScroll: {
                     speed: 1,
                 },
             },
-
+            600: {
+                perPage: 1.5,
+                autoScroll: {
+                    speed: 1,
+                },
+            },
 
         },
     }).mount(window.splide.Extensions);
