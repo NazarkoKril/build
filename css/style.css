@@ -172,19 +172,18 @@ header {
   opacity: 1;
   visibility: visible;
   position: fixed;
-  top: 0;
+  top: 94px;
   right: -100%;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   background-color: white;
   padding: 15px;
   padding-left: 40px;
   box-sizing: border-box;
   transition: right 0.3s ease;
   z-index: 1000;
-  overflow-y: auto;
+  overflow-y: hidden;
   transition: var(--trans);
-  max-height: 100%;
 }
 .burger__menu .btn {
   position: absolute;
@@ -194,7 +193,7 @@ header {
 }
 
 .burger__menu.active {
-  right: 40px;
+  right: 0px;
   opacity: 1;
   visibility: visible;
 }
@@ -206,12 +205,8 @@ header {
   flex-direction: column;
   align-items: start;
   gap: 20px;
-  top: 94px;
   width: 100%;
-  position: absolute;
-  z-index: 999;
   background-color: white;
-  padding-left: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
